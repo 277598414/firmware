@@ -1,4 +1,4 @@
-name: IPQ807X-WIFI
+name: AX1800PRO-WIFI
 
 on:
   workflow_dispatch:
