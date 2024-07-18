@@ -1,4 +1,4 @@
-name: IPQ60xx-WIFI
+name: long-WIFI
 
 on:
   workflow_dispatch:
@@ -15,7 +15,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: IPQ60xx-WIFI
+  FIRMWARE_TAG: long-WIFI
   TZ: Asia/Shanghai
 
 jobs:
