@@ -1,4 +1,4 @@
-name: AX1800pro-WIFI
+name: AX1800pro
 
 on:
   workflow_dispatch:
@@ -15,7 +15,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: AX1800pro-WIFI
+  FIRMWARE_TAG: AX1800pro
   TZ: Asia/Shanghai
 
 jobs:
