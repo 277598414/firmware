@@ -1,4 +1,4 @@
-name: long-ipq600xx.config
+name: long-ipq600xx
 
 on:
   workflow_dispatch:
@@ -15,7 +15,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: long-ipq600xx.config
+  FIRMWARE_TAG: long-ipq600xx
   TZ: Asia/Shanghai
 
 jobs:
