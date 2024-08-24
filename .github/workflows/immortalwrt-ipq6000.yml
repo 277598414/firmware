@@ -1,4 +1,4 @@
-name: immortalwrt
+name: immortalwrt-ipq6000
 
 on:
   workflow_dispatch:
@@ -14,7 +14,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: immortalwrt
+  FIRMWARE_TAG: immortalwrt-ipq6000
   TZ: Asia/Shanghai
 
 jobs:
