@@ -1,4 +1,4 @@
-name: JiaY-shi-ipq60xx
+name: openwrt-ipq60xx
 
 on:
   workflow_dispatch:
@@ -9,13 +9,12 @@ env:
   REPO_URL: https://github.com/277598414/JiaY-shi-openwrt.git
   REPO_BRANCH: ipq60xx-devel
   CONFIG_FILE: configs/JiaY-shi-ipq60xx.config
-  PATCHES_FILE_1: patches/0001-show-soc-status-on-luci.patch
   DIY_SCRIPT: diy-script.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: JiaY-shi-ipq60xx
+  FIRMWARE_TAG: openwrt-ipq60xx
   TZ: Asia/Shanghai
 
 jobs:
@@ -95,14 +94,6 @@ jobs:
         cd $OPENWRT_PATH
         ./scripts/feeds update -a
         ./scripts/feeds install -a
-
-    - name: Apply patches(安装补丁)   
-      run: |
-        git config --global user.name "OpenWrt Builder"
-        git config --global user.email "buster-openwrt@ovvo.uk"
-        cp $PATCHES_FILE_1 $OPENWRT_PATH/feeds/luci
-        cd $OPENWRT_PATH/feeds/luci
-        git am 0001-show-soc-status-on-luci.patch
   
     - name: Load Custom Configuration(加载自定义配置)
       run: |
