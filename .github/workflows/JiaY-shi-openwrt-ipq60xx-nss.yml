@@ -1,4 +1,4 @@
-name: JiaY-shi-ipq60xx-nss
+name: JiaY-shi-openwrt-ipq60xx-nss
 
 on:
   workflow_dispatch:
@@ -14,7 +14,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: JiaY-shi-ipq60xx-nss
+  FIRMWARE_TAG: JiaY-shi-openwrt-ipq60xx-nss
   TZ: Asia/Shanghai
 
 jobs:
