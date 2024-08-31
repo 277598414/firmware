@@ -1,4 +1,4 @@
-name: JiaY-shi-openwrt-x64
+name: openwrt-x64
 
 on:
   workflow_dispatch:
@@ -14,7 +14,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: JiaY-shi-openwrt-x64
+  FIRMWARE_TAG: openwrt-x64
   TZ: Asia/Shanghai
 
 jobs:
